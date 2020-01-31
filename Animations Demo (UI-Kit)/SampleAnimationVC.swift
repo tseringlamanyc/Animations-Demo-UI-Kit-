@@ -23,13 +23,29 @@ class SampleAnimationVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        scaleAnimation()
+        //scaleAnimation()
+        pulsateAnimation()
     }
     
     private func scaleAnimation() {
+        // alpha, corner radius, position, center, transition, color, shadow, opacity
+        // transform: scale, rotate, translate
         UIView.animate(withDuration: 2.0) {
             self.sampleAnimationView.imageLogo.transform = CGAffineTransform(scaleX: 2, y: 3)
             self.sampleAnimationView.imageLogo.alpha = 0.0
+        }
+    }
+    
+    private func pulsateAnimation() {
+        UIView.animate(withDuration: 1.0, delay: 0, options: [.repeat], animations: {
+            // animation block
+            self.sampleAnimationView.imageLogo.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }) { (done) in
+            // executed after animation is done
+            // use animateKeyFrames for chaining animations"
+            UIView.animate(withDuration: 0.3) {
+                self.sampleAnimationView.imageLogo.transform = CGAffineTransform.identity
+            }
         }
     }
 }
