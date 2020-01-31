@@ -23,16 +23,21 @@ class SampleAnimationVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        //scaleAnimation()
-        pulsateAnimation()
+        scaleAnimation()
+       // pulsateAnimation()
     }
-    
+  
     private func scaleAnimation() {
         // alpha, corner radius, position, center, transition, color, shadow, opacity
         // transform: scale, rotate, translate
-        UIView.animate(withDuration: 2.0) {
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: [], animations: {
             self.sampleAnimationView.imageLogo.transform = CGAffineTransform(scaleX: 2, y: 3)
             self.sampleAnimationView.imageLogo.alpha = 0.0
+        }) { (done) in
+            UIView.animate(withDuration: 1.0) {
+                self.sampleAnimationView.swiftLogo.isHidden = false
+                self.sampleAnimationView.swiftLogo.layer.cornerRadius = self.sampleAnimationView.swiftLogo.bounds.size.width / 2.0
+            }
         }
     }
     
