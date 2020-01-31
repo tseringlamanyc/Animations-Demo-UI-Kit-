@@ -15,6 +15,7 @@
 		52728A1923E480710000D1FD /* SampleAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A1823E480710000D1FD /* SampleAnimationVC.swift */; };
 		52728A1B23E480910000D1FD /* ConstraintAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A1A23E480910000D1FD /* ConstraintAnimationVC.swift */; };
 		52728A1D23E486CD0000D1FD /* SampleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A1C23E486CD0000D1FD /* SampleAnimationView.swift */; };
+		52728A1F23E49B5D0000D1FD /* ConstraintsAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52728A1E23E49B5C0000D1FD /* ConstraintsAnimation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		52728A1823E480710000D1FD /* SampleAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationVC.swift; sourceTree = "<group>"; };
 		52728A1A23E480910000D1FD /* ConstraintAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAnimationVC.swift; sourceTree = "<group>"; };
 		52728A1C23E486CD0000D1FD /* SampleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationView.swift; sourceTree = "<group>"; };
+		52728A1E23E49B5C0000D1FD /* ConstraintsAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConstraintsAnimation.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				52728A0423E47E240000D1FD /* SceneDelegate.swift */,
 				52728A1623E47FA30000D1FD /* AnimationsTabController.swift */,
 				52728A1823E480710000D1FD /* SampleAnimationVC.swift */,
+				52728A1E23E49B5C0000D1FD /* ConstraintsAnimation.storyboard */,
 				52728A1A23E480910000D1FD /* ConstraintAnimationVC.swift */,
 				52728A1C23E486CD0000D1FD /* SampleAnimationView.swift */,
 				52728A0B23E47E260000D1FD /* Assets.xcassets */,
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52728A0F23E47E260000D1FD /* LaunchScreen.storyboard in Resources */,
+				52728A1F23E49B5D0000D1FD /* ConstraintsAnimation.storyboard in Resources */,
 				52728A0C23E47E260000D1FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
