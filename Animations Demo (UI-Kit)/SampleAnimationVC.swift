@@ -9,9 +9,27 @@
 import UIKit
 
 class SampleAnimationVC: UIViewController {
-
+    
+    private let sampleAnimationView = SampleAnimationView()
+    
+    override func loadView() {
+        view = sampleAnimationView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGreen
+        view.backgroundColor = .systemBackground
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        scaleAnimation()
+    }
+    
+    private func scaleAnimation() {
+        UIView.animate(withDuration: 2.0) {
+            self.sampleAnimationView.imageLogo.transform = CGAffineTransform(scaleX: 2, y: 3)
+            self.sampleAnimationView.imageLogo.alpha = 0.0
+        }
     }
 }
