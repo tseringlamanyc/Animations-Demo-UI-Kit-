@@ -15,6 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4k-xO-Hzd">
+                                <rect key="frame" x="103.5" y="344.5" width="207" height="207"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="m4k-xO-Hzd" secondAttribute="height" multiplier="1:1" id="N3u-cI-dw9"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-Su-ERw">
                                 <rect key="frame" x="20" y="718" width="374" height="44"/>
                                 <subviews>
@@ -22,11 +29,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="167" height="44"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Up"/>
+                                        <connections>
+                                            <action selector="upButton:" destination="cdV-vy-vic" eventType="touchUpInside" id="xHg-lK-WZV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQk-PY-NFR">
                                         <rect key="frame" x="207" y="0.0" width="167" height="44"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Down"/>
+                                        <connections>
+                                            <action selector="downButton:" destination="cdV-vy-vic" eventType="touchUpInside" id="Lq2-E2-k2b"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -36,12 +49,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="m4k-xO-Hzd" firstAttribute="width" secondItem="xjU-E7-8ni" secondAttribute="width" multiplier="0.5" id="11Z-1N-9jh"/>
                             <constraint firstItem="cbI-Su-ERw" firstAttribute="leading" secondItem="NVV-2J-EvS" secondAttribute="leading" constant="20" id="OX9-TC-CJi"/>
+                            <constraint firstItem="m4k-xO-Hzd" firstAttribute="centerX" secondItem="xjU-E7-8ni" secondAttribute="centerX" id="VcD-1E-TCL"/>
                             <constraint firstItem="NVV-2J-EvS" firstAttribute="trailing" secondItem="cbI-Su-ERw" secondAttribute="trailing" constant="20" id="X4U-ui-nFp"/>
+                            <constraint firstItem="m4k-xO-Hzd" firstAttribute="centerY" secondItem="xjU-E7-8ni" secondAttribute="centerY" id="eQG-5a-RBp"/>
                             <constraint firstItem="cbI-Su-ERw" firstAttribute="bottom" secondItem="NVV-2J-EvS" secondAttribute="bottom" constant="-100" id="yZF-8D-dc3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NVV-2J-EvS"/>
                     </view>
+                    <connections>
+                        <outlet property="boxView" destination="m4k-xO-Hzd" id="8VH-yI-5SM"/>
+                        <outlet property="boxYConstraints" destination="eQG-5a-RBp" id="d1a-zi-v3b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hc-me-NaV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
