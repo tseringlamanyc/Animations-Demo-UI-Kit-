@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		52728A0323E47E240000D1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A0223E47E240000D1FD /* AppDelegate.swift */; };
 		52728A0523E47E240000D1FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A0423E47E240000D1FD /* SceneDelegate.swift */; };
-		52728A0723E47E240000D1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A0623E47E240000D1FD /* ViewController.swift */; };
 		52728A0C23E47E260000D1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52728A0B23E47E260000D1FD /* Assets.xcassets */; };
 		52728A0F23E47E260000D1FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52728A0D23E47E260000D1FD /* LaunchScreen.storyboard */; };
 		52728A1723E47FA30000D1FD /* AnimationsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A1623E47FA30000D1FD /* AnimationsTabController.swift */; };
+		52728A1923E480710000D1FD /* SampleAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A1823E480710000D1FD /* SampleAnimationVC.swift */; };
+		52728A1B23E480910000D1FD /* ConstraintAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A1A23E480910000D1FD /* ConstraintAnimationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		527289FF23E47E240000D1FD /* Animations Demo (UI-Kit).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animations Demo (UI-Kit).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52728A0223E47E240000D1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52728A0423E47E240000D1FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52728A0623E47E240000D1FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52728A0B23E47E260000D1FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52728A0E23E47E260000D1FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52728A1023E47E260000D1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52728A1623E47FA30000D1FD /* AnimationsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTabController.swift; sourceTree = "<group>"; };
+		52728A1823E480710000D1FD /* SampleAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationVC.swift; sourceTree = "<group>"; };
+		52728A1A23E480910000D1FD /* ConstraintAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAnimationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				52728A0223E47E240000D1FD /* AppDelegate.swift */,
 				52728A0423E47E240000D1FD /* SceneDelegate.swift */,
-				52728A0623E47E240000D1FD /* ViewController.swift */,
 				52728A1623E47FA30000D1FD /* AnimationsTabController.swift */,
+				52728A1823E480710000D1FD /* SampleAnimationVC.swift */,
+				52728A1A23E480910000D1FD /* ConstraintAnimationVC.swift */,
 				52728A0B23E47E260000D1FD /* Assets.xcassets */,
 				52728A0D23E47E260000D1FD /* LaunchScreen.storyboard */,
 				52728A1023E47E260000D1FD /* Info.plist */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52728A0723E47E240000D1FD /* ViewController.swift in Sources */,
 				52728A0323E47E240000D1FD /* AppDelegate.swift in Sources */,
+				52728A1B23E480910000D1FD /* ConstraintAnimationVC.swift in Sources */,
+				52728A1923E480710000D1FD /* SampleAnimationVC.swift in Sources */,
 				52728A1723E47FA30000D1FD /* AnimationsTabController.swift in Sources */,
 				52728A0523E47E240000D1FD /* SceneDelegate.swift in Sources */,
 			);
