@@ -17,6 +17,7 @@ class ConstraintAnimationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
+        boxView.layer.cornerRadius = boxView.frame.size.height / 2
     }
     
     
