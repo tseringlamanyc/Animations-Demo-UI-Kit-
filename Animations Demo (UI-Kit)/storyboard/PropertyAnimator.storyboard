@@ -14,13 +14,42 @@
                     <view key="view" contentMode="scaleToFill" id="yMc-VJ-tBh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yasuo" translatesAutoresizingMaskIntoConstraints="NO" id="Upw-iv-ED8">
+                                <rect key="frame" x="103.5" y="344.5" width="207" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Upw-iv-ED8" secondAttribute="height" multiplier="1:1" id="upf-e3-TDc"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qEx-fs-jvG">
+                                <rect key="frame" x="38" y="708" width="338" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="WWP-wp-0ka" eventType="valueChanged" id="8FZ-SA-D2x"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Upw-iv-ED8" firstAttribute="width" secondItem="yMc-VJ-tBh" secondAttribute="width" multiplier="0.5" id="6y5-Zb-oCS"/>
+                            <constraint firstItem="2vn-Hc-sZE" firstAttribute="bottom" secondItem="qEx-fs-jvG" secondAttribute="bottom" constant="124" id="eG2-r1-HCe"/>
+                            <constraint firstItem="Upw-iv-ED8" firstAttribute="centerY" secondItem="yMc-VJ-tBh" secondAttribute="centerY" id="eGG-hx-IGc"/>
+                            <constraint firstItem="Upw-iv-ED8" firstAttribute="centerX" secondItem="yMc-VJ-tBh" secondAttribute="centerX" id="lM2-xn-ePb"/>
+                            <constraint firstItem="2vn-Hc-sZE" firstAttribute="trailing" secondItem="qEx-fs-jvG" secondAttribute="trailing" constant="40" id="ujr-4N-aYV"/>
+                            <constraint firstItem="qEx-fs-jvG" firstAttribute="leading" secondItem="2vn-Hc-sZE" secondAttribute="leading" constant="40" id="zA8-vj-Znf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2vn-Hc-sZE"/>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="qEx-fs-jvG" id="U6B-1Q-q57"/>
+                        <outlet property="yasuo" destination="Upw-iv-ED8" id="YK7-fJ-U2g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9H-MX-Rbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="100"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="yasuo" width="178" height="200"/>
+    </resources>
 </document>

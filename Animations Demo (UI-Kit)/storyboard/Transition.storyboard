@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6A-72-E2g">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <rect key="frame" x="103.5" y="344.5" width="207" height="207"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="T6A-72-E2g" secondAttribute="height" multiplier="1:1" id="D28-hD-ahR"/>
                                 </constraints>
@@ -25,7 +25,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="T6A-72-E2g" firstAttribute="centerY" secondItem="IDT-Sa-Ffn" secondAttribute="centerY" id="e2E-fM-23c"/>
-                            <constraint firstItem="T6A-72-E2g" firstAttribute="width" secondItem="IDT-Sa-Ffn" secondAttribute="width" multiplier="0.57971" id="u2P-tS-dl9"/>
+                            <constraint firstItem="T6A-72-E2g" firstAttribute="width" secondItem="IDT-Sa-Ffn" secondAttribute="width" multiplier="0.5" id="u2P-tS-dl9"/>
                             <constraint firstItem="T6A-72-E2g" firstAttribute="centerX" secondItem="IDT-Sa-Ffn" secondAttribute="centerX" id="zwG-XV-9Fs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LyU-nd-QgI"/>
