@@ -34,10 +34,19 @@ class AnimationsTabController: UITabBarController {
         return viewcontroller
     }()
     
+    private lazy var propertyAnimator: PropertyAnimatorVC = {
+       let vc = UIStoryboard(name: "PropertyAnimator", bundle: nil)
+        guard let viewcontroller = vc.instantiateViewController(identifier: "PropertyAnimatorVC") as? PropertyAnimatorVC else {
+            fatalError()
+        }
+        viewcontroller.tabBarItem = UITabBarItem(title: "Property Animator", image: UIImage(systemName: "4.circle"), tag: 3)
+        return viewcontroller
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // set VC for the tab bar (2 tabs)
-        viewControllers = [sampleAnimation, constraintAnimation, transitionAnimation]
+        viewControllers = [sampleAnimation, constraintAnimation, transitionAnimation, propertyAnimator]
     }
 }

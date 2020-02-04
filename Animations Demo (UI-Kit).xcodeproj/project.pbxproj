@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		52294D0B23E9CB1200E22826 /* TransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52294D0A23E9CB1200E22826 /* TransitionVC.swift */; };
 		52294D0E23E9CB3D00E22826 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52294D0D23E9CB3D00E22826 /* Transition.storyboard */; };
+		52294D1323E9D74600E22826 /* PropertyAnimatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52294D1223E9D74600E22826 /* PropertyAnimatorVC.swift */; };
+		52294D1523E9D75800E22826 /* PropertyAnimator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52294D1423E9D75800E22826 /* PropertyAnimator.storyboard */; };
 		52728A0323E47E240000D1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A0223E47E240000D1FD /* AppDelegate.swift */; };
 		52728A0523E47E240000D1FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728A0423E47E240000D1FD /* SceneDelegate.swift */; };
 		52728A0C23E47E260000D1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52728A0B23E47E260000D1FD /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		52294D0A23E9CB1200E22826 /* TransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionVC.swift; sourceTree = "<group>"; };
 		52294D0D23E9CB3D00E22826 /* Transition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
+		52294D1223E9D74600E22826 /* PropertyAnimatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorVC.swift; sourceTree = "<group>"; };
+		52294D1423E9D75800E22826 /* PropertyAnimator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PropertyAnimator.storyboard; sourceTree = "<group>"; };
 		527289FF23E47E240000D1FD /* Animations Demo (UI-Kit).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animations Demo (UI-Kit).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52728A0223E47E240000D1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52728A0423E47E240000D1FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 				52294D0A23E9CB1200E22826 /* TransitionVC.swift */,
 				52728A1823E480710000D1FD /* SampleAnimationVC.swift */,
 				52728A1A23E480910000D1FD /* ConstraintAnimationVC.swift */,
+				52294D1223E9D74600E22826 /* PropertyAnimatorVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -62,6 +67,7 @@
 			children = (
 				52728A1E23E49B5C0000D1FD /* ConstraintsAnimation.storyboard */,
 				52294D0D23E9CB3D00E22826 /* Transition.storyboard */,
+				52294D1423E9D75800E22826 /* PropertyAnimator.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 			files = (
 				52728A0F23E47E260000D1FD /* LaunchScreen.storyboard in Resources */,
 				52728A1F23E49B5D0000D1FD /* ConstraintsAnimation.storyboard in Resources */,
+				52294D1523E9D75800E22826 /* PropertyAnimator.storyboard in Resources */,
 				52294D0E23E9CB3D00E22826 /* Transition.storyboard in Resources */,
 				52728A0C23E47E260000D1FD /* Assets.xcassets in Resources */,
 			);
@@ -190,6 +197,7 @@
 				52728A0323E47E240000D1FD /* AppDelegate.swift in Sources */,
 				52728A1D23E486CD0000D1FD /* SampleAnimationView.swift in Sources */,
 				52728A1B23E480910000D1FD /* ConstraintAnimationVC.swift in Sources */,
+				52294D1323E9D74600E22826 /* PropertyAnimatorVC.swift in Sources */,
 				52728A1923E480710000D1FD /* SampleAnimationVC.swift in Sources */,
 				52728A1723E47FA30000D1FD /* AnimationsTabController.swift in Sources */,
 				52728A0523E47E240000D1FD /* SceneDelegate.swift in Sources */,
