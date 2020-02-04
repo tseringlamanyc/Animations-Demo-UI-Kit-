@@ -40,6 +40,7 @@ class ConstraintAnimationVC: UIViewController {
         // when we change the constraints in iOS and we need this change to be animated we only nned to animate
         // self.view.layoutIfNeeded and the animation will take place
         // layoutIfNeeded will get called as the view is marked "dirty" by iOS, we implmenting self.view.layoutIFNeeded in the animation block will cause the animation
+        
         UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 20.0, options: [.curveEaseIn], animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
@@ -61,5 +62,4 @@ class ConstraintAnimationVC: UIViewController {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }
-    
 }

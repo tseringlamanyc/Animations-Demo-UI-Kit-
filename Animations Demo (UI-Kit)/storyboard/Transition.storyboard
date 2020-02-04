@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TransitionVC-->
+        <scene sceneID="7mD-fX-TpU">
+            <objects>
+                <viewController storyboardIdentifier="TransitionVC" id="lC6-Gb-Edm" customClass="TransitionVC" customModule="Animations_Demo__UI_Kit_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IDT-Sa-Ffn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6A-72-E2g">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T6A-72-E2g" secondAttribute="height" multiplier="1:1" id="D28-hD-ahR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="T6A-72-E2g" firstAttribute="centerY" secondItem="IDT-Sa-Ffn" secondAttribute="centerY" id="e2E-fM-23c"/>
+                            <constraint firstItem="T6A-72-E2g" firstAttribute="width" secondItem="IDT-Sa-Ffn" secondAttribute="width" multiplier="0.57971" id="u2P-tS-dl9"/>
+                            <constraint firstItem="T6A-72-E2g" firstAttribute="centerX" secondItem="IDT-Sa-Ffn" secondAttribute="centerX" id="zwG-XV-9Fs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LyU-nd-QgI"/>
+                    </view>
+                    <connections>
+                        <outlet property="kaisa" destination="T6A-72-E2g" id="3To-8f-rmR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoY-TU-5Lx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="140"/>
+        </scene>
+    </scenes>
+</document>
